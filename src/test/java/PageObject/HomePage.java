@@ -21,13 +21,14 @@ public class HomePage extends BasePage {
 	public  HomePage(WebDriver driver) {
 		super(driver);
 		}
-	@FindBy(id="twotabsearchtextbox") WebElement srbox_search;	
-	@FindBy(xpath="//span[normalize-space()='OnePlus 11R 5G (Galactic Silver, 16GB RAM, 256GB Storage)']") WebElement lk_link;	
-		
+	@FindBy(id="twotabsearchtextbox") WebElement srbox_search;
+	@FindBy(id="nav-search-submit-button")  WebElement btn_submit;
+	
 	public void searchitem(String search) {
 		srbox_search.sendKeys(search);
 	}
-	public void clicklinkitem() {
-		lk_link.click();
+	public void clicksubmit() {
+		btn_submit.click();
 	}
+	
 }

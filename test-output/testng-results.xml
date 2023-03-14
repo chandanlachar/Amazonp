@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-15T01:11:10 IST" name="Suite" finished-at="2023-03-15T01:11:38 IST" duration-ms="28409">
+    <groups>
+    </groups>
+    <test started-at="2023-03-15T01:11:10 IST" name="edge" finished-at="2023-03-15T01:11:22 IST" duration-ms="12774">
+      <class name="TestCases.TastCase1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.TastCase1@776aec5c]" started-at="2023-03-15T01:11:10 IST" name="setup" finished-at="2023-03-15T01:11:18 IST" duration-ms="8749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TastCase1()[pri:0, instance:TestCases.TastCase1@776aec5c]" started-at="2023-03-15T01:11:18 IST" name="TastCase1" finished-at="2023-03-15T01:11:22 IST" duration-ms="3686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TastCase1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TastCase1@776aec5c]" started-at="2023-03-15T01:11:22 IST" name="teardown" finished-at="2023-03-15T01:11:22 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.TastCase1 -->
+    </test> <!-- edge -->
+    <test started-at="2023-03-15T01:11:22 IST" name="chrome" finished-at="2023-03-15T01:11:25 IST" duration-ms="2340">
+      <class name="TestCases.TastCase1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.TastCase1@6ed3ccb2]" started-at="2023-03-15T01:11:22 IST" name="setup" finished-at="2023-03-15T01:11:25 IST" duration-ms="2319" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:56242/devtools/browser/6b743e70-ca0b-4ee8-b54f-d0fcd08e1b3b
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:56242/devtools/browser/6b743e70-ca0b-4ee8-b54f-d0fcd08e1b3b
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+at testbase.BaseClass.setup(BaseClass.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TastCase1()[pri:0, instance:TestCases.TastCase1@6ed3ccb2]" started-at="2023-03-15T01:11:25 IST" name="TastCase1" finished-at="2023-03-15T01:11:25 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:56242/devtools/browser/6b743e70-ca0b-4ee8-b54f-d0fcd08e1b3b
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:56242/devtools/browser/6b743e70-ca0b-4ee8-b54f-d0fcd08e1b3b
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+at testbase.BaseClass.setup(BaseClass.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TastCase1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TastCase1@6ed3ccb2]" started-at="2023-03-15T01:11:25 IST" name="teardown" finished-at="2023-03-15T01:11:25 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.TastCase1 -->
+    </test> <!-- chrome -->
+    <test started-at="2023-03-15T01:11:25 IST" name="firefox" finished-at="2023-03-15T01:11:38 IST" duration-ms="13220">
+      <class name="TestCases.TastCase1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.TastCase1@489115ef]" started-at="2023-03-15T01:11:25 IST" name="setup" finished-at="2023-03-15T01:11:33 IST" duration-ms="8018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TastCase1()[pri:0, instance:TestCases.TastCase1@489115ef]" started-at="2023-03-15T01:11:33 IST" name="TastCase1" finished-at="2023-03-15T01:11:35 IST" duration-ms="2098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TastCase1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:TestCases.TastCase1@489115ef]" started-at="2023-03-15T01:11:35 IST" name="teardown" finished-at="2023-03-15T01:11:38 IST" duration-ms="3100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- TestCases.TastCase1 -->
+    </test> <!-- firefox -->
+  </suite> <!-- Suite -->
+</testng-results>
